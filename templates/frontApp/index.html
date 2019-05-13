@@ -1,0 +1,593 @@
+{% extends 'frontApp/indexBase.html' %}
+{% block menu-header %}
+<div class="sticky-header header-section ">
+	<div class="header-left">
+		<!--toggle button start-->
+		<button id="showLeftPush"><i class="fa fa-bars"></i></button>
+		<!--toggle button end-->
+		<div class="profile_details_left"><!--notifications of menu start -->
+			<ul class="nofitications-dropdown">
+				<li class="dropdown head-dpdn">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope"></i><span class="badge">4</span></a>
+					<ul class="dropdown-menu">
+						<li>
+							<div class="notification_header">
+								<h3>You have 3 new messages</h3>
+							</div>
+						</li>
+						<li><a href="#">
+							<div class="user_img"><img src="/static/images/1.jpg" alt=""></div>
+							<div class="notification_desc">
+								<p>Lorem ipsum dolor amet</p>
+								<p><span>1 hour ago</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</a></li>
+						<li class="odd"><a href="#">
+							<div class="user_img"><img src="/static/images/4.jpg" alt=""></div>
+							<div class="notification_desc">
+								<p>Lorem ipsum dolor amet </p>
+								<p><span>1 hour ago</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</a></li>
+						<li><a href="#">
+							<div class="user_img"><img src="/static/images/3.jpg" alt=""></div>
+							<div class="notification_desc">
+								<p>Lorem ipsum dolor amet </p>
+								<p><span>1 hour ago</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</a></li>
+						<li><a href="#">
+							<div class="user_img"><img src="/static/images/2.jpg" alt=""></div>
+							<div class="notification_desc">
+								<p>Lorem ipsum dolor amet </p>
+								<p><span>1 hour ago</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</a></li>
+						<li>
+							<div class="notification_bottom">
+								<a href="#">See all messages</a>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown head-dpdn">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell"></i><span class="badge blue">4</span></a>
+					<ul class="dropdown-menu">
+						<li>
+							<div class="notification_header">
+								<h3>You have 3 new notification</h3>
+							</div>
+						</li>
+						<li><a href="#">
+							<div class="user_img"><img src="/static/images/4.jpg" alt=""></div>
+							<div class="notification_desc">
+								<p>Lorem ipsum dolor amet</p>
+								<p><span>1 hour ago</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</a></li>
+						<li class="odd"><a href="#">
+							<div class="user_img"><img src="/static/images/1.jpg" alt=""></div>
+							<div class="notification_desc">
+								<p>Lorem ipsum dolor amet </p>
+								<p><span>1 hour ago</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</a></li>
+						<li><a href="#">
+							<div class="user_img"><img src="/static/images/3.jpg" alt=""></div>
+							<div class="notification_desc">
+								<p>Lorem ipsum dolor amet </p>
+								<p><span>1 hour ago</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</a></li>
+						<li><a href="#">
+							<div class="user_img"><img src="/static/images/2.jpg" alt=""></div>
+							<div class="notification_desc">
+								<p>Lorem ipsum dolor amet </p>
+								<p><span>1 hour ago</span></p>
+							</div>
+							<div class="clearfix"></div>
+						</a></li>
+						<li>
+							<div class="notification_bottom">
+								<a href="#">See all notifications</a>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown head-dpdn">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks"></i><span class="badge blue1">8</span></a>
+					<ul class="dropdown-menu">
+						<li>
+							<div class="notification_header">
+								<h3>You have 8 pending task</h3>
+							</div>
+						</li>
+						<li><a href="#">
+							<div class="task-info">
+								<span class="task-desc">Database update</span><span class="percentage">40%</span>
+								<div class="clearfix"></div>
+							</div>
+							<div class="progress progress-striped active">
+								<div class="bar yellow" style="width:40%;"></div>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="task-info">
+								<span class="task-desc">Dashboard done</span><span class="percentage">90%</span>
+								<div class="clearfix"></div>
+							</div>
+							<div class="progress progress-striped active">
+								<div class="bar green" style="width:90%;"></div>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="task-info">
+								<span class="task-desc">Mobile App</span><span class="percentage">33%</span>
+								<div class="clearfix"></div>
+							</div>
+							<div class="progress progress-striped active">
+								<div class="bar red" style="width: 33%;"></div>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="task-info">
+								<span class="task-desc">Issues fixed</span><span class="percentage">80%</span>
+								<div class="clearfix"></div>
+							</div>
+							<div class="progress progress-striped active">
+								<div class="bar  blue" style="width: 80%;"></div>
+							</div>
+						</a></li>
+						<li>
+							<div class="notification_bottom">
+								<a href="#">See all pending tasks</a>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="clearfix"> </div>
+		</div>
+		<!--notification menu end -->
+		<div class="clearfix"> </div>
+	</div>
+	<div class="header-right">
+
+
+		<!--search-box-->
+		<div class="search-box">
+			<form class="input">
+				<input class="sb-search-input input__field--madoka" placeholder="Search..." type="search" id="input-31" />
+				<label class="input__label" for="input-31">
+					<svg class="graphic" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
+						<path d="m0,0l404,0l0,77l-404,0l0,-77z"/>
+					</svg>
+				</label>
+			</form>
+		</div><!--//end-search-box-->
+
+		<div class="profile_details">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						<div class="profile_img">
+							<span class="prfil-img"><img src="todo.jpg" alt=""> </span>
+							<div class="user-name">
+								<p>Admin Name</p>
+								<span>Administrator</span>
+							</div>
+							<i class="fa fa-angle-down lnr"></i>
+							<i class="fa fa-angle-up lnr"></i>
+							<div class="clearfix"></div>
+						</div>
+					</a>
+					<ul class="dropdown-menu drp-mnu">
+						<li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
+						<li> <a href="#"><i class="fa fa-user"></i> My Account</a> </li>
+						<li> <a href="#"><i class="fa fa-suitcase"></i> Profile</a> </li>
+						<li> <a href="/logout"><i class="fa fa-sign-out"></i> Logout</a> </li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="clearfix"> </div>
+</div>
+{% endblock %}
+{% block left-navigation %}
+	<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+		<aside class="page-wrapper sidebar-bg bg1 toggled">
+				<nav id="sidebar" class="sidebar-wrapper">
+						<div class="sidebar-content">
+
+								<!-- <div class="navbar-header">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+										<h1><a class="navbar-brand" href="index.html"><span class="fa fa-area-chart"></span> 华谊集团<span class="dashboard_text">天然橡胶采购平台</span></a></h1>
+								</div> -->
+
+
+							<!-- sidebar-brand  -->
+							<div class="sidebar-item sidebar-brand">
+								<h1><a class="navbar-brand" href="index.html"><span class="fa fa-area-chart">华谊集团</span></a></h1>
+							</div>
+							<!-- sidebar-header  -->
+							<div class="sidebar-item sidebar-header d-flex flex-nowrap">
+									<span class="navbar-brand" >橡胶采购平台</span>
+							</div>
+							<!-- sidebar-search  -->
+							<!-- <div class="sidebar-item sidebar-search">
+								<div>
+									<div class="input-group">
+										<input type="text" class="form-control search-menu" placeholder="Search..." style="width: 126px">
+										<div class="input-group-append">
+											<span class="input-group-text">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div> -->
+							<!-- sidebar-menu  -->
+							<div class=" sidebar-item sidebar-menu">
+								<ul>
+									<li class="header-menu">
+										<span>功能菜单</span>
+									</li>
+									<li class="sidebar-dropdown">
+										<a href="index.html">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-text">综合信息</span>
+											<span class="badge badge-pill badge-danger">3</span>
+										</a>
+									</li>
+									<li class="sidebar-dropdown">
+										<a href="#">
+											<i class="fa fa-pie-chart"></i>
+											<span class="menu-text">走势监测</span>
+											<span class="badge badge-pill badge-warning">New</span>
+										</a>
+										<div class="sidebar-submenu">
+												<ul>
+														<li><a href="conditiondata.html"><i class="fa fa-angle-right"></i> 期货市场价格与新闻</a></li>
+														<li><a href="conditiontime.html"><i class="fa fa-angle-right"></i> 现货市场价格与新闻</a></li>
+														<li><a href="conditionrecord.html"><i class="fa fa-angle-right"></i> 相关品价格数据与新闻</a></li>
+												</ul>
+										</div>
+									</li>
+									<li class="sidebar-dropdown">
+										<a href="#">
+											<i class="fa fa-laptop"></i>
+											<span class="menu-text">价格预测预测</span>
+										</a>
+										<div class="sidebar-submenu">
+												<ul>
+														<li><a href="/faultmiddle"><i class="fa fa-angle-right"></i> 市场价格ARIMA时序预测</a></li>
+														<li><a href="/faultime"><i class="fa fa-angle-right"></i> 季度趋势预测</a></li>
+												</ul>
+										</div>
+									</li>
+									<li class="sidebar-dropdown">
+										<a href="#">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-text">专家系统</span>
+										</a>
+										<div class="sidebar-submenu">
+												<ul>
+														<li><a href="/healthlevel"><i class="fa fa-angle-right"></i> 评分系统</a></li>
+														<li><a href="/healthfmeca"><i class="fa fa-angle-right"></i> 考虑专家意见的价格预测</a></li>
+												</ul>
+										</div>
+									</li>
+									<li class="sidebar-dropdown">
+										<a href="#">
+												<i class="fa fa-compass"></i>
+											<span class="menu-text">决策建议</span>
+										</a>
+										<div class="sidebar-submenu">
+											<ul>
+													<li><a href="maintainfile.html"><i class="fa fa-angle-right"></i> 决策报告</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="sidebar-dropdown">
+											<a href="#">
+													<i class="fa fa-edit"></i>
+												<span class="menu-text">文件管理</span>
+											</a>
+											<div class="sidebar-submenu">
+												<ul>
+														<li><a href="PHMTraining.html"><i class="fa fa-angle-right"></i>采购计划文件</a></li>
+														<li><a href="PHMKey.html"><i class="fa fa-angle-right"></i>生产计划文件</a></li>
+														<li><a href="PHMSystem.html"><i class="fa fa-angle-right"></i>其他文件</a></li>						
+												</ul>
+											</div>
+										</li>
+
+
+									<li class="header-menu">
+										<span>用户管理</span>
+									</li>
+									<li>
+											<a href="BackgroundManagement.html">
+													<i class="fa fa-group "></i>
+											<span class="menu-text">后台管理</span>
+										</a>
+									</li>
+									<li>
+											<a href="login.html">
+												<i class="fa fa-key"></i>
+												<span class="menu-text">注册/登录</span>
+										</a>
+									</li>
+									<li>
+											<a href="Message.html">
+											<i class="fa fa-envelope"></i>
+											<span class="menu-text">信息</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- sidebar-menu  -->
+						</div>
+						<!-- sidebar-footer  -->
+						<div class="sidebar-footer">
+							<div class="dropdown">
+			
+								<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-bell"></i>
+									<span class="badge badge-pill badge-warning notification">3</span>
+								</a>
+								<div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
+									<div class="notifications-header">
+										<i class="fa fa-bell"></i>
+										Notifications
+									</div>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">
+										<div class="notification-content">
+											<div class="icon">
+												<i class="fas fa-check text-success border border-success"></i>
+											</div>
+											<div class="content">
+												<div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+												<div class="notification-time">
+													6 minutes ago
+												</div>
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item" href="#">
+										<div class="notification-content">
+											<div class="icon">
+												<i class="fas fa-exclamation text-info border border-info"></i>
+											</div>
+											<div class="content">
+												<div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+												<div class="notification-time">
+													Today
+												</div>
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item" href="#">
+										<div class="notification-content">
+											<div class="icon">
+												<i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
+											</div>
+											<div class="content">
+												<div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+												<div class="notification-time">
+													Yesterday
+												</div>
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-center" href="#">View all notifications</a>
+								</div>
+							</div>
+							<div class="dropdown">
+								<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-envelope"></i>
+									<span class="badge badge-pill badge-success notification">7</span>
+								</a>
+								<div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
+									<div class="messages-header">
+										<i class="fa fa-envelope"></i>
+										Messages
+									</div>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">
+										<div class="message-content">
+											<div class="pic">
+												<img src="img/user.jpg" alt="">
+											</div>
+											<div class="content">
+												<div class="message-title">
+													<strong> Jhon doe</strong>
+												</div>
+												<div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+											</div>
+										</div>
+			
+									</a>
+									<a class="dropdown-item" href="#">
+										<div class="message-content">
+											<div class="pic">
+												<img src="img/user.jpg" alt="">
+											</div>
+											<div class="content">
+												<div class="message-title">
+													<strong> Jhon doe</strong>
+												</div>
+												<div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+											</div>
+										</div>
+			
+									</a>
+									<a class="dropdown-item" href="#">
+										<div class="message-content">
+											<div class="pic">
+												<img src="img/user.jpg" alt="">
+											</div>
+											<div class="content">
+												<div class="message-title">
+													<strong> Jhon doe</strong>
+												</div>
+												<div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+											</div>
+										</div>
+									</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-center" href="#">View all messages</a>
+			
+								</div>
+							</div>
+							<div class="dropdown">
+								<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-cog"></i>
+									<span class="badge-sonar"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
+									<a class="dropdown-item" href="#">My profile</a>
+									<a class="dropdown-item" href="#">Help</a>
+									<a class="dropdown-item" href="#">Setting</a>
+								</div>
+							</div>
+							<div>
+								<a href="#">
+									<i class="fa fa-power-off"></i>
+								</a>
+							</div>
+							<div class="pinned-footer">
+								<a href="#">
+									<i class="fas fa-ellipsis-h"></i>
+								</a>
+							</div>
+						</div>
+					</nav>
+		</aside>
+			<!--left-fixed -navigation-->
+			<!-- <aside class="sidebar-left">
+				<nav class="navbar navbar-inverse">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a class="navbar-brand" href="index.html"><span class="fa fa-area-chart"></span> 华谊集团<span class="dashboard_text">天然橡胶采购平台</span></a></h1>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="sidebar-menu">
+							<li class="header">功能菜单</li>
+							<li class="treeview">
+								<a href="index.html">
+									<i class="fa fa-dashboard"></i> <span>综合信息</span>
+								</a>
+							</li>
+	
+							<li class="treeview">
+								<a href="charts.html">
+									<i class="fa fa-pie-chart"></i>
+									<span>价格走势监测</span>
+									<span class="label label-primary pull-right">new</span>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="conditiondata.html"><i class="fa fa-angle-right"></i> 期货市场价格与新闻</a></li>
+									<li><a href="conditiontime.html"><i class="fa fa-angle-right"></i> 现货市场价格与新闻</a></li>
+									<li><a href="conditionrecord.html"><i class="fa fa-angle-right"></i> 相关品价格数据与新闻</a></li>
+								</ul>
+							</li>
+	
+							<li class="treeview">
+								<a href="#">
+									<i class="fa fa-laptop"></i>
+									<span>价格预测预测</span>
+									<i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="/faultmiddle"><i class="fa fa-angle-right"></i> 市场价格ARIMA时序预测</a></li>
+									<li><a href="/faultime"><i class="fa fa-angle-right"></i> 季度趋势预测</a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#">
+									<i class="fa fa-dashboard"></i>
+									<span>专家系统</span>
+									<i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="/healthlevel"><i class="fa fa-angle-right"></i> 评分系统</a></li>
+									<li><a href="/healthfmeca"><i class="fa fa-angle-right"></i> 考虑专家意见的价格预测</a></li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#">
+									<i class="fa fa-compass"></i>
+									<span>决策建议</span>
+									<i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="maintainfile.html"><i class="fa fa-angle-right"></i> 决策报告</a></li>
+								</ul>
+							</li>
+	
+							<li class="treeview">
+								<a href="#">
+									<i class="fa fa-edit"></i> <span>文件管理</span>
+									<i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="PHMTraining.html"><i class="fa fa-angle-right"></i>采购计划文件</a></li>
+									<li><a href="PHMKey.html"><i class="fa fa-angle-right"></i>生产计划文件</a></li>
+									<li><a href="PHMSystem.html"><i class="fa fa-angle-right"></i>其他文件</a></li>
+								</ul>
+							</li>
+	
+							<li class="header">用户管理</li>
+	
+							<li class="treeview">
+								<a href="BackgroundManagement.html">
+									<i class="fa fa-group "></i> <span>后台管理</span>
+								</a>
+							</li>
+							</li>
+							<li class="treeview">
+								<a href="login.html">
+									<i class="fa fa-key"></i> <span>登陆/注册</span>
+								</a>
+							</li>
+							<li class="treeview">
+								<a href="Message.html">
+									<i class="fa fa-envelope"></i> <span>消息</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</nav>
+			</aside> -->
+	</div>
+		<!--left-fixed -navigation-->
+{% endblock %}

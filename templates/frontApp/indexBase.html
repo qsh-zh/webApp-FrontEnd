@@ -1,0 +1,592 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	<!-- Bootstrap Core CSS -->
+	<link href={%static "/css/bootstrap.css" %} rel='stylesheet' type='text/css' />
+
+
+
+	<!-- font-awesome icons CSS -->
+	<link href={%static "/css/font-awesome.css"%} rel="stylesheet">
+	<!-- //font-awesome icons CSS-->
+
+	<!-- side nav css file -->
+	<link href={%static "/css/sidebar-themes.css" %} media='all' rel='stylesheet' type='text/css'/>
+	<!-- <link href={%static "/css/SidebarNav.min.css"%} media='all' rel='stylesheet' type='text/css'/> -->
+	<!-- //side nav css file -->
+
+	<!-- js-->
+	<script src={%static "/js/jquery-1.12.1.min.js"%}></script>
+	<script src={%static "/js/modernizr.custom.js"%}></script>
+
+	<!--webfonts-->
+	<link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<!--//webfonts-->
+
+	<!-- chart -->
+	<script src={%static "/js/Chart.js"%}></script>
+	<!-- //chart -->
+
+	<link href={%static "/css/main.css" %} rel="stylesheet" media='all' type='text/css'/>
+
+	<!-- Metis Menu -->
+	<script src={%static "/js/metisMenu.min.js"%}></script>
+	<script src={%static "/js/custom.js"%}></script>
+	<link href={%static "/css/custom.css"%} rel="stylesheet">
+	<!--//Metis Menu -->
+	<style>
+		#chartdiv {
+			width: 100%;
+			height: 300px;
+		}
+	</style>
+	<!--pie-chart --><!-- index page sales reviews visitors pie chart -->
+	<script src={%static "/js/pie-chart.js"%} type="text/javascript"></script>
+	<script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#demo-pie-1').pieChart({
+                barColor: '#2dde98',
+                trackColor: '#eee',
+                lineCap: 'round',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-2').pieChart({
+                barColor: '#8e43e7',
+                trackColor: '#eee',
+                lineCap: 'butt',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-3').pieChart({
+                barColor: '#ffc168',
+                trackColor: '#eee',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+
+        });
+
+	</script>
+	<!-- //pie-chart --><!-- index page sales reviews visitors pie chart -->
+
+	<!-- requried-jsfiles-for owl -->
+	<link href={%static "/css/owl.carousel.css"%} rel="stylesheet">
+	<script src={%static "/js/owl.carousel.js"%}></script>
+	<script>
+        $(document).ready(function() {
+            $("#owl-demo").owlCarousel({
+                items : 3,
+                lazyLoad : true,
+                autoPlay : true,
+                pagination : true,
+                nav:true,
+            });
+        });
+	</script>
+    <!-- //requried-jsfiles-for owl -->
+    
+
+    <!-- load vue -->
+    <script src="/static/js/vue.js"></script>
+    <!-- <script src="/static/js/vue-resource.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/vue.resource/1.0.3/vue-resource.min.js"></script>
+	
+
+	<!-- Custom CSS -->
+	<link href={%static "/css/style.css"%} rel='stylesheet' type='text/css' />
+
+</head>
+<body class="cbp-spmenu-push">
+<div class="main-content">
+    <!--left-fixed -navigation-->
+    {% block left-navigation %}
+	{% endblock %}
+	
+
+	<!-- header-starts -->
+    {% block menu-header %}
+    {% endblock %}
+	<!-- //header-ends -->
+	<!-- main content start-->
+	<div id="page-wrapper">
+		<div class="main-page">
+			<div class="col_3">
+				<div class="col-md-3 widget widget1">
+					<div class="r3_counter_box">
+						<i class="pull-left fa fa-pie-chart dollar1 icon-rounded"></i>
+						<div class="stats">
+							<h5><strong>450</strong></h5>
+							<span>实时价格</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 widget widget1">
+					<div class="r3_counter_box">
+						<i class="pull-left fa fa-laptop user1 icon-rounded"></i>
+						<div class="stats">
+							<h5><strong>1019</strong></h5>
+							<span>隔日涨跌趋势</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 widget widget1">
+					<div class="r3_counter_box">
+						<i class="pull-left fa fa-th user2 icon-rounded"></i>
+						<div class="stats">
+							<h5><strong>1012</strong></h5>
+							<span>隔周价格预测</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 widget widget1">
+					<div class="r3_counter_box">
+						<i class="pull-left fa fa-table icon-rounded"></i>
+						<div class="stats">
+							<h5><strong>452</strong></h5>
+							<span>季度涨跌趋势</span>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-md-3 widget">
+					<div class="r3_counter_box">
+						<i class="pull-left fa fa-users dollar2 icon-rounded"></i>
+						<div class="stats">
+							<h5><strong>15</strong></h5>
+							<span>用户管理</span>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+			<div class="row-one widgettable">
+				<div class="col-md-7 content-top-2 card">
+					<div class="agileinfo-cdr">
+						<!-- <div class="card-header">
+							<h3>价格走势</h3>
+						</div> -->
+
+						<div id="Linegraph" style="width: 98%; height: 350px">
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-3 stat">
+					<div class="content-top-1">
+						<div class="col-md-6 top-content">
+							<h5>上海</h5>
+							<label>1500</label>
+						</div>
+						<div class="col-md-6 top-content1">
+							<div id="demo-pie-1" class="pie-title-center" data-percent="80"> <span class="pie-value"></span> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="content-top-1">
+						<div class="col-md-6 top-content">
+							<h5>泰国</h5>
+							<label>1400</label>
+						</div>
+						<div class="col-md-6 top-content1">
+							<div id="demo-pie-2" class="pie-title-center" data-percent="75"> <span class="pie-value"></span> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="content-top-1">
+						<div class="col-md-6 top-content">
+							<h5>马拉西亚</h5>
+							<label>1450</label>
+						</div>
+						<div class="col-md-6 top-content1">
+							<div id="demo-pie-3" class="pie-title-center" data-percent="90"> <span class="pie-value"></span> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-2 stat">
+					<div class="content-top">
+						<div class="top-content facebook">
+							<a href="#"><h4 style="color:#fff">上海</h4></a>
+						</div>
+						<ul class="info">
+							<li class="col-md-6"><b>1296</b><p>昨日</p></li>
+							<li class="col-md-6"><b>10%</b><p>涨跌</p></li>
+							<div class="clearfix"></div>
+						</ul>
+					</div>
+					<div class="content-top">
+						<div class="top-content twitter">
+							<a href="#"><h4 style="color:#fff">泰国</h4></a>
+						</div>
+						<ul class="info">
+							<li class="col-md-6"><b>1997</b><p>昨日</p></li>
+							<li class="col-md-6"><b>10%</b><p>涨跌</p></li>
+							<div class="clearfix"></div>
+						</ul>
+					</div>
+					<div class="content-top">
+						<div class="top-content google-plus">
+							<a href="#"><h4 style="color:#fff">马拉西亚</h4></a>
+						</div>
+						<ul class="info">
+							<li class="col-md-6"><b>1700</b><p>昨日</p></li>
+							<li class="col-md-6"><b>-10%</b><p>涨跌</p></li>
+							<div class="clearfix"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+			<div class="charts">
+				<div class="col-md-4 charts-grids widget">
+					<!-- <div class="card-header">
+						<h3>Bar chart</h3>
+					</div> -->
+
+					<div id="container" style="width: 100%; height:270px;">
+						<canvas id="canvas"></canvas>
+					</div>
+					<button id="randomizeData">Randomize Data</button>
+					<button id="addDataset">Add Dataset</button>
+					<button id="removeDataset">Remove Dataset</button>
+					<button id="addData">Add Data</button>
+					<button id="removeData">Remove Data</button>
+
+				</div>
+
+				<div class="col-md-4 charts-grids widget states-mdl">
+					<div class="card-header">
+						<h3>不同预测算法对比</h3>
+					</div>
+					<div id="chartdiv"></div>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>
+
+
+			<!-- for amcharts js -->
+			<script src={%static "/js/amcharts.js"%}></script>
+			<script src={%static "/js/serial.js"%}></script>
+			<script src={%static "/js/export.min.js"%}></script>
+			<link rel="stylesheet" href={%static "/css/export.css"%} type="text/css" media="all" />
+			<script src={%static "/js/light.js"%}></script>
+			<!-- for amcharts js -->
+
+			<script  src={%static "/js/index2.js"%}></script>
+
+			<div class="charts">
+				<div class="mid-content-top charts-grids">
+					<div class="middle-content">
+						<h4 class="title">Carousel Slider</h4>
+						<!-- start content_slider -->
+						<div id="owl-demo" class="owl-carousel text-center">
+							<div class="item">
+								<img class="lazyOwl img-responsive" data-src="/static/images/slider1.jpg" alt="name">
+							</div>
+							<div class="item">
+								<img class="lazyOwl img-responsive" data-src="/static/images/slider2.jpg" alt="name">
+							</div>
+							<div class="item">
+								<img class="lazyOwl img-responsive" data-src="/static/images/slider3.jpg" alt="name">
+							</div>
+							<div class="item">
+								<img class="lazyOwl img-responsive" data-src="/static/images/slider4.jpg" alt="name">
+							</div>
+							<div class="item">
+								<img class="lazyOwl img-responsive" data-src="/static/images/slider5.jpg" alt="name">
+							</div>
+							<div class="item">
+								<img class="lazyOwl img-responsive" data-src="/static/images/slider6.jpg" alt="name">
+							</div>
+							<div class="item">
+								<img class="lazyOwl img-responsive" data-src="/static/images/slider7.jpg" alt="name">
+							</div>
+
+						</div>
+					</div>
+					<!--//sreen-gallery-cursual---->
+				</div>
+			</div>
+
+			<div class="col_1">
+				<div class="col-md-4 span_8">
+					<div class="activity_box">
+						<h2>Inbox</h2>
+						<div class="scrollbar" id="style-1">
+							<div class="activity-row">
+								<div class="col-xs-3 activity-img"><img src='/static/images/1.jpg' class="img-responsive" alt=""/></div>
+								<div class="col-xs-7 activity-desc">
+									<h5><a href="#">Michael Chris</a></h5>
+									<p>Hey ! There I'm available.</p>
+								</div>
+								<div class="col-xs-2 activity-desc1"><h6>12:05 PM</h6></div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="activity-row">
+								<div class="col-xs-3 activity-img"><img src='/static/images/4.jpg' class="img-responsive" alt=""/></div>
+								<div class="col-xs-7 activity-desc">
+									<h5><a href="#">Alexander</a></h5>
+									<p>Hey ! There I'm available.</p>
+								</div>
+								<div class="col-xs-2 activity-desc1"><h6>12:06 PM</h6></div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="activity-row">
+								<div class="col-xs-3 activity-img"><img src='/static/images/3.jpg' class="img-responsive" alt=""/></div>
+								<div class="col-xs-7 activity-desc">
+									<h5><a href="#">Daniel Lucas</a></h5>
+									<p>Hey ! There I'm available.</p>
+								</div>
+								<div class="col-xs-2 activity-desc1"><h6>01:30 PM</h6></div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="activity-row">
+								<div class="col-xs-3 activity-img"><img src='/static/images/2.jpg' class="img-responsive" alt=""/></div>
+								<div class="col-xs-7 activity-desc">
+									<h5><a href="#">Jackson Jacob</a></h5>
+									<p>Hey ! There I'm available.</p>
+								</div>
+								<div class="col-xs-2 activity-desc1"><h6>01:50 PM</h6></div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="activity-row">
+								<div class="col-xs-3 activity-img"><img src='/static/images/1.jpg' class="img-responsive" alt=""/></div>
+								<div class="col-xs-7 activity-desc">
+									<h5><a href="#">David Samuel</a></h5>
+									<p>Hey ! There I'm available.</p>
+								</div>
+								<div class="col-xs-2 activity-desc1"><h6>12:20 PM</h6></div>
+								<div class="clearfix"> </div>
+							</div>
+
+							<div class="activity-row">
+								<div class="col-xs-3 activity-img"><img src='/static/images/4.jpg' class="img-responsive" alt=""/></div>
+								<div class="col-xs-7 activity-desc">
+									<h5><a href="#">laura Smith</a></h5>
+									<p>Hey ! There I'm available.</p>
+								</div>
+								<div class="col-xs-2 activity-desc1"><h6>12:50 PM</h6></div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<form action="#" method="post">
+							<input type="text" value="Enter your text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your text';}" required="">
+							<input type="submit" value="Submit"/>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4 span_8">
+					<div class="activity_box activity_box1">
+						<h3>chat</h3>
+						<div class="scrollbar" id="style-3">
+							<div class="activity-row activity-row1">
+								<div class="col-xs-3 activity-img"><img src='/static/images/1.jpg' class="img-responsive" alt=""/><span>06:01 AM</span></div>
+								<div class="col-xs-5 activity-img1">
+									<div class="activity-desc-sub">
+										<h5>Michael Chris</h5>
+										<p>Hello ! this is Michael chris</p>
+									</div>
+								</div>
+								<div class="col-xs-4 activity-desc1"></div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="activity-row activity-row1">
+								<div class="col-xs-2 activity-desc1"></div>
+								<div class="col-xs-7 activity-img2">
+									<div class="activity-desc-sub1">
+										<h5>Alexander</h5>
+										<p>Hi,How are you ? What about our next meeting?</p>
+									</div>
+								</div>
+								<div class="col-xs-3 activity-img"><img src='/static/images/3.jpg' class="img-responsive" alt=""/><span>06:02 AM</span></div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="activity-row activity-row1">
+								<div class="col-xs-3 activity-img"><img src='/static/images/1.jpg' class="img-responsive" alt=""/><span>06:05 AM</span></div>
+								<div class="col-xs-5 activity-img1">
+									<div class="activity-desc-sub">
+										<h5>Michael Chris</h5>
+										<p>Yeah fine, Hope you the same</p>
+									</div>
+								</div>
+								<div class="col-xs-4 activity-desc1"></div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="activity-row activity-row1">
+								<div class="col-xs-2 activity-desc1"></div>
+								<div class="col-xs-7 activity-img2">
+									<div class="activity-desc-sub1">
+										<h5>Alexander</h5>
+										<p>Wow that's great</p>
+									</div>
+								</div>
+								<div class="col-xs-3 activity-img"><img src='/static/images/3.jpg' class="img-responsive" alt=""/><span>06:20 PM</span></div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<form action="#" method="post">
+							<input type="text" value="Enter your text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your text';}" required="">
+							<input type="submit" value="Send"/>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4 span_8">
+					<div class="activity_box activity_box2">
+						<h3>todo</h3>
+						<div class="scrollbar" id="style-2">
+							<div class="activity-row activity-row1">
+								<div class="single-bottom">
+									<ul>
+										<li>
+											<input type="checkbox"  id="brand" value="">
+											<label for="brand"><span></span> Integer sollicitudin lacinia condimentum.</label>
+										</li>
+										<li>
+											<input type="checkbox"  id="brand1" value="">
+											<label for="brand1"><span></span> ligula sit amet hendrerit init lorem.</label>
+										</li>
+										<li>
+											<input type="checkbox"  id="brand2" value="">
+											<label for="brand2"><span></span>  Donec aliquam dolor eu augue condimentum.</label>
+										</li>
+										<li>
+											<input type="checkbox"  id="brand9" value="">
+											<label for="brand9"><span></span>  at tristique Pain that produces no resultant.</label>
+										</li>
+										<li>
+											<input type="checkbox"  id="brand8" value="">
+											<label for="brand8"><span></span> Nulla finibus rhoncus turpis quis tristique.</label>
+										</li>
+										<li>
+											<input type="checkbox"  id="brand7" value="">
+											<label for="brand7"><span></span> Cupidatat non proident Praising pain.</label>
+										</li>
+										<li>
+											<input type="checkbox"  id="brand3" value="">
+											<label for="brand3"><span></span>  libero vel elementum euismod, mauris tellus</label>
+										</li>
+										<li>
+											<input type="checkbox"  id="brand4" value="">
+											<label for="brand4"><span></span> Donec aliquam dolor eu augue condimentum.</label>
+										</li>
+										<li>
+											<input type="checkbox"  id="brand5" value="">
+											<label for="brand5"><span></span> Orci varius natoque penatibus et magnis dis.</label>
+										</li>
+										<li>
+											<input type="checkbox"  id="brand6" value="">
+											<label for="brand6"><span></span> parturient Dolorem ipsum quia.</label>
+										</li>
+
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<form action="#" method="post">
+							<input type="text" value="Enter your text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your text';}" required="">
+							<input type="submit" value="Submit"/>
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+
+			</div>
+
+		</div>
+	</div>
+	<!--footer-->
+	<div class="footer">
+		<p>&copy; 2018 PHM健康管理平台. All Rights Reserved | Design by <a href="#" target="_blank">Xi'an Satellite Control Center</a></p>
+	</div>
+	<!--//footer-->
+</div>
+
+<script src={%static "/js/Chart.bundle.js"%}></script>
+<script src={%static "/js/utils.js"%}></script>
+<script src={%static "/js/barChartIndex.js"%} ></script>
+
+<!-- Classie --><!-- for toggle left push menu script -->
+<script src={%static "/js/classie.js"%}></script>
+<script>
+    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        showLeftPush = document.getElementById( 'showLeftPush' ),
+        body = document.body;
+
+    showLeftPush.onclick = function() {
+		classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+         disableOther( 'showLeftPush' );
+		$(".page-wrapper").toggleClass("toggled");
+	};
+
+
+    function disableOther( button ) {
+        if( button !== 'showLeftPush' ) {
+            classie.toggle( showLeftPush, 'disabled' );
+        }
+    }
+</script>
+<!-- //Classie --><!-- //for toggle left push menu script -->
+
+<!--scrolling js-->
+<script src={%static "/js/jquery.nicescroll.js"%}></script>
+<script src={%static "/js/scripts.js"%}></script>
+<!--//scrolling js-->
+
+<!-- todo 禁用nav js，需要要付钱，弹出广告等问题，2333，之后用一个开源的 -->
+<!-- side nav js -->
+<!-- <script src={%static "/js/SidebarNav.min.js"%} type='text/javascript'></script>
+<script>
+    $('.sidebar-menu').SidebarNav()
+</script> -->
+<!-- //side nav js -->
+
+<!-- for index page weekly sales java script -->
+<script src={%static "/js/echarts.js"%}></script>
+<script src={%static "/js/indexEcharts.js"%}></script>
+
+
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src={%static "/js/bootstrap.js"%}> </script>
+<!-- //Bootstrap Core JavaScript -->
+
+<!-- using online scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+<script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src={%static "/js/main.js"%}></script>
+
+</body>
+</html>

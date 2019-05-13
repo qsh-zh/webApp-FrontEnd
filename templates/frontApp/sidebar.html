@@ -1,0 +1,107 @@
+{% extends 'frontApp/indexBase.html' %}
+{% block left-navigation %}
+<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+	<!--left-fixed -navigation-->
+	<aside class="sidebar-left">
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1><a class="navbar-brand" href="index.html"><span class="fa fa-area-chart"></span> 华谊集团<span class="dashboard_text">天然橡胶采购平台</span></a></h1>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="sidebar-menu">
+					<li class="header">功能菜单</li>
+					<li class="treeview">
+						<a href="index.html">
+							<i class="fa fa-dashboard"></i> <span>综合信息</span>
+						</a>
+					</li>
+
+					<li class="treeview">
+						<a href="charts.html">
+							<i class="fa fa-pie-chart"></i>
+							<span>价格走势监测</span>
+							<span class="label label-primary pull-right">new</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="conditiondata.html"><i class="fa fa-angle-right"></i> 期货市场价格与新闻</a></li>
+							<li><a href="conditiontime.html"><i class="fa fa-angle-right"></i> 现货市场价格与新闻</a></li>
+							<li><a href="conditionrecord.html"><i class="fa fa-angle-right"></i> 相关品价格数据与新闻</a></li>
+						</ul>
+					</li>
+
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-laptop"></i>
+							<span>价格预测预测</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="/faultmiddle"><i class="fa fa-angle-right"></i> 市场价格ARIMA时序预测</a></li>
+							<li><a href="/faultime"><i class="fa fa-angle-right"></i> 季度趋势预测</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-dashboard"></i>
+							<span>专家系统</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="/healthlevel"><i class="fa fa-angle-right"></i> 评分系统</a></li>
+							<li><a href="/healthfmeca"><i class="fa fa-angle-right"></i> 考虑专家意见的价格预测</a></li>
+						</ul>
+					</li>
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-compass"></i>
+							<span>决策建议</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="maintainfile.html"><i class="fa fa-angle-right"></i> 决策报告</a></li>
+						</ul>
+					</li>
+
+					<li class="treeview">
+						<a href="#">
+							<i class="fa fa-edit"></i> <span>文件管理</span>
+							<i class="fa fa-angle-left pull-right"></i>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="PHMTraining.html"><i class="fa fa-angle-right"></i>采购计划文件</a></li>
+							<li><a href="PHMKey.html"><i class="fa fa-angle-right"></i>生产计划文件</a></li>
+							<li><a href="PHMSystem.html"><i class="fa fa-angle-right"></i>其他文件</a></li>
+						</ul>
+					</li>
+
+					<li class="header">用户管理</li>
+
+					<li class="treeview">
+						<a href="BackgroundManagement.html">
+							<i class="fa fa-group "></i> <span>后台管理</span>
+						</a>
+					</li>
+					</li>
+					<li class="treeview">
+						<a href="login.html">
+							<i class="fa fa-key"></i> <span>登陆/注册</span>
+						</a>
+					</li>
+					<li class="treeview">
+						<a href="Message.html">
+							<i class="fa fa-envelope"></i> <span>消息</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+	</aside>
+</div>
+{% endblock %}
